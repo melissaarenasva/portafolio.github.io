@@ -1,0 +1,329 @@
+:root{
+    --color-primario: #cdb4db;
+    --color-secundario: #ffc8dd;
+    --color-terciario: #ffafcc;
+    --color-cuaternario: #bde0fe;
+    --color-quinario: #a2d2ff;
+    --color-sextiario: #1d3557;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 3px;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    text-decoration: none;
+   
+}
+.logo{
+    width: 15%;
+}
+body {
+    background-color: var(--color-secundario);
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    background-color: var(--color-primario);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: var(--color-sextiario);
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+nav .container ul li a:hover{
+    color: var(--color-sextiario);
+    background-color:var(--color-terciario);
+}
+
+
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 90%;
+    height: 94vh;
+    max-width: 1800px;
+    margin: 2%;
+    text-align: center;
+    color: rgb(192, 192, 183);
+    font-size: 1.4em;
+   
+}
+
+/*seccion 1*/
+
+.bienvenida .down {
+    margin-top: 3em;
+}
+
+.bienvenida {
+    background-color: var(--color-quinario);
+   padding-top: 3.12em;
+}
+
+.servicios{
+    background-color:var(--color-secundario);
+   
+}
+
+.flex{
+    display: flex;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.foto{
+    height: auto;
+}
+
+.yo{ 
+    padding-top: 1.87em;
+    margin-left: 3.125em;
+    text-align: left;
+}
+
+.yo b{
+    font-size: 18px;
+    color: var(--color-sextiario);
+}
+
+h1{
+    color: var(--color-sextiario);
+}
+
+p{
+    color: var(--color-sextiario);
+}
+
+.presentacion{
+    padding-bottom: 0.625em;
+}
+
+
+.redes-sociales{
+    display: flex;
+    justify-content: space-around;
+}
+
+section .contacto{ 
+    margin-top: 1em;
+}
+
+
+section .contacto a{
+    background-color: #cadfdf;
+    padding: 0em 1.87em;
+    border-radius: 10px;
+    color: #adb1ae;
+    font-size: 20px;
+}
+
+section .contacto a:hover{
+    color: rgb(226, 238, 238);
+    background-color: #3032ad;
+    
+}
+
+/*fin seccion 1*/
+
+h3{
+    color:  #240630;
+    padding: 15px;
+    
+}
+
+.flex-servicios{
+    display: flex;
+
+}
+
+.trabajos{
+    background-color:var(--color-quinario);
+   
+}
+
+.estudios{
+    background-color: var(--color-primario);
+    
+}
+
+
+
+
+
+/* Acá empieza el Slider*/
+.swiper {
+    width: 30%;
+    height: 60%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgb(221, 202, 202);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  
+
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+
+  /* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    
+        body{
+            width: 100%;
+        }
+    
+        header .menu{
+            flex-direction: column;
+        }
+        
+        .logotipo{
+            flex-basis: 90%;
+            padding-bottom: 1.25em
+        }
+        .menu-items {
+            font-size: 1.563em;
+            padding: 0.625em 1.25em;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .menu-items ul li{
+            padding: 0.625em 0.625em;
+            margin-top: 0em;
+        }
+        .cuenta{
+            font-size: 1.563em;
+        padding: 1.875em ;
+        }
+        
+        .uno{
+            flex-direction: column;
+        }
+        
+        .container h1{
+            font-size: 1.875em;
+            text-align: left;
+            padding-left: 0em;
+        }
+    
+        p{
+            font-size: 1.563em;
+            padding-bottom: 0em;
+            line-height: 2.188em;
+        }
+        
+        .logos{
+            flex-direction: column;
+            justify-content: center;
+            width:100%;
+        }
+    
+        footer .flex{
+            flex-direction: column;
+            padding-top: 1.875em;
+        }
+        
+        .slogan h1 {
+            font-size: 1.875em;
+            text-align: center;
+        }
+        
+        .redes{
+            text-align: center;
+        }
+        
+        .redes ul li a{
+            font-size: 1.87em;
+            padding: 0em 1.25em;
+        }
+        
+        .otros{
+            flex-wrap: wrap;
+            padding-top: 1.875em;
+            padding-bottom: 1.875em;
+            text-align: left;
+            justify-content: center;
+        }
+        
+        .pie {
+            font-size: 1.25em;
+            padding: 0.625em 1.563em;
+            text-align: left;
+        }
+        
+        .registro{
+            flex-direction: column;
+        }
+        
+}
+
+  /*Final de Slider*/
